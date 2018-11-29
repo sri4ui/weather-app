@@ -1,0 +1,64 @@
+
+.horizontal-center {
+
+	text-align: center;
+}
+
+.padding-top-30 {
+
+padding-top:30px;
+}
+
+.background-skyblue {
+
+background-color: #7ec0ee;
+}
+
+.background-green {
+
+background-color: green;
+}
+
+.background-navy {
+
+background-color: blue ;
+}
+
+.templateHeight {
+
+	height: 200px;
+}
+
+.error-message {
+
+	color:red;
+}
+
+.pull-left{
+	float: left;
+}
+.pull-right{
+	float: right;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+	border-bottom: 1px solid #ddd;
+	padding: 15px;
+    text-align: left;
+}
+
+td {
+    height: 50px;
+    vertical-align: bottom;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+.margin-top{
+	margin-top : 10px;
+}
+

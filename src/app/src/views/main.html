@@ -1,0 +1,68 @@
+<div ng-controller="mainCtrl">
+
+
+	<div class="horizontal-center">	
+		<div class="padding-top-30">
+				<h1>Weather Man</h1>
+				<div>
+					<div class="pull-left"><h4>Let Weatherman know where you want to see conditions</h4></div>
+					<br></br>
+					<div class="pull-left">
+						<form method="post" action="">
+							<fieldset>
+									Street: <input ng-model="streetaddrs" type="text" id="street"/> 
+									City: <input ng-model="city" ng-change="enableSubmitButton(city, state, zipCodeEntered)" type="text" id="city"/>
+									State: <input ng-model="state" ng-change="enableSubmitButton(city, state, zipCodeEntered)" type="text" id="state"/>
+									Zip Code: <input ng-model="zipCodeEntered"  ng-change="enableSubmitButton(city, state, zipCodeEntered)" type="text" maxlength="5" id="zipcode"/> 
+									<button ng-disabled="disableSubmit" ng-click="getGeoLocation()" type="button" class="btn btn-default">See Weather</button>
+							</fieldset>
+					</form>
+					<div ng-if = "showweatherInfo">
+						<span>Current Weather at {{formattedAddr}}</span>
+					</div>
+					<div ng-if = "geoLocError">
+						<span> We have trouble finding your address. Please try again later or verify your address. </span>
+					</div>
+				</div>
+			</div>			
+		</div>
+
+		<div ng-if="showweatherInfo" class="padding-top-30">
+
+			<div>
+			<table>
+				<tbody>
+					<tr>
+						<td>Humidity</td>
+						<td>{{humidity}} %</td>
+					</tr>
+					<tr>
+						<td>Sunrise</td>
+						<td>{{sunrise}}</td>
+					</tr>
+					<tr>
+						<td>Sunset</td>
+						<td>{{sunset}}</td>
+					</tr>
+					<tr>
+						<td>Daily Temperature</td>
+						<td>{{temparature}}</td>
+					</tr>
+					<tr>
+						<td>Daily Precipitation</td>
+						<td></td>
+					</tr>
+					
+				</tbody>
+				</table>
+			</div>
+			<div class="margin-top">
+				<!--<button type="button" ng-click=showView('last30Days') class="btn btn-primary btn-lg">Last 30 days</button>-->
+				<!--<button type="button" ng-click=showView('today') class="btn btn-info btn-lg">Today</button>-->
+				<button type="button" ng-click=showView('next60Days') class="btn btn-success btn-lg">Click Here For Future Forecast</button>
+			</div>
+  		</div>
+
+  		<div ng-include="templateUrl"></div>
+	</div>
+</div>
