@@ -1,9 +1,9 @@
 # Weather Man - This App provides weather information based on user entered address. 
 # How this App  works :
 
-User can enter any  one value State, City , Zip and can the current weather at that location. Along with that we also have an option to look for weather conditions for whole week .
+User can enter any  one value State, City , Zip and can check the current weather at that location. On click of future forecast next 1 week weather information will be available for the user.
 
-Based on the city, state, Zip entered we get the geolocation of the USER using google maps API and then call openweather API for current and future forecast. 
+Based on the city, state, Zip entered we get the geolocation of the USER using google maps API and then call two different openweather API's for current and future forecast. 
 
 ![](src/app/src/assets/UserForm.PNG)
 ![](src/app/src/assets/CurrentWeather.PNG)
