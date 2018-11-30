@@ -13,7 +13,9 @@ Based on the city, state, Zip entered we get the geolocation of the USER using g
 Angular 1.6 , ES5 , Karma-Jasmine , Phantom JS , Yarn , http-server for local server. 
 
 # How to Run:
-yarn install
+yarn install or npm install
+npm install http-server -g
+set path to "weather-man/src/app/src/"
 http-server -a localhost -o --cors
 
 #Next Updates 
