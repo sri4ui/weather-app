@@ -13,13 +13,16 @@ Based on the city, state, Zip entered we get the geolocation of the USER using g
 Angular 1.6 , ES5 , Karma-Jasmine , Phantom JS , Yarn , http-server for local server. 
 
 # How to Run:
-yarn install or npm install
-npm install http-server -g
-set path to "weather-man/src/app/src/"
-http-server -a localhost -o --cors
+*yarn install or npm install
+*npm install http-server -g
+*set path to "weather-man/src/app/src/"
+*http-server -a localhost -o --cors
 
 #Next Updates 
  Test Cases, PhantomJS issue needs to be fixed
  More UI
  More Live Features 
 
+# Notes
+
+Initially wanted to display historical data (weather report for past 30 days and future 60 days), but couldn't find any free open weather information API available for historical data. Most of the API's are not returning the desired information, so i developed this to display one week forecast for now and will update the application to display historical data later. 
