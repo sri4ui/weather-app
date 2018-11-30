@@ -42,7 +42,7 @@ angular.module('pkWeatherman')
 						$scope.formattedAddr = geoLocDetails.data.results[0].formatted_address;
 						$scope.lat = geoLocDetails.data.results[0].geometry.location.lat;
 						$scope.lng =  geoLocDetails.data.results[0].geometry.location.lng;
-						$scope.cityID = 
+						
 						//console.log(geoLocDetails.data.results[0].geometry.location.lng);
 
 						$scope.getWeather();
